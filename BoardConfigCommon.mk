@@ -1,6 +1,7 @@
 # inherit from the proprietary version
 -include vendor/huawei/msm7x30-common/BoardConfigVendor.mk
 TARGET_SPECIFIC_HEADER_PATH := device/huawei/msm7x30-common/include
+
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
@@ -60,6 +61,10 @@ WIFI_DRIVER_MODULE_NAME          :=  "dhd"
 WIFI_DRIVER_MODULE_ARG           :=  "firmware_path=/system/etc/firmware/firmware.bin nvram_path=/system/etc/wifi/nvram.txt"
 WIFI_BAND                        := 802_11_ABG
 #BOARD_USE_SERNUM_FOR_MAC := true
+
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
 
 # GPS
 BOARD_USES_QCOM_GPS := true
