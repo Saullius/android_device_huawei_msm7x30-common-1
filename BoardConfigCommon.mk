@@ -37,14 +37,20 @@ BOARD_NEEDS_MEMORYHEAPPMEM := true
 # Display
 TARGET_NO_HW_VSYNC := true
 USE_OPENGL_RENDERER := true
+BOARD_EGL_CFG := device/huawei/msm7x30-common/config/egl.cfg
 
+WITH_JIT := true
+#ENABLE_JSC_JIT := true
+#JS_ENGINE := v8
+#HTTP := chrome
+ENABLE_WEBGL := true
+#WEBCORE_INPAGE_VIDEO := true
+
+# Kernel
 BOARD_KERNEL_CMDLINE := console=ttyDCC0 androidboot.hardware=huawei
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGESIZE := 4096
 
-BOARD_EGL_CFG := device/huawei/msm7x30-common/config/egl.cfg
-
-# Kernel
 #TARGET_KERNEL_SOURCE := /home/android/shenduos-opensource/kernel/huawei/honor
 #TARGET_KERNEL_CONFIG := shendu_honor_defconfig
 TARGET_PREBUILT_KERNEL := device/huawei/msm7x30-common/kernel
@@ -92,6 +98,8 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/huawei/msm7x30-common/rele
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun1/file"
+BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/msm7x30-common/recovery/graphics_cn.c
+TARGET_RECOVERY_INITRC := device/huawei/msm7x30-common/recovery/recovery.rc
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
 
