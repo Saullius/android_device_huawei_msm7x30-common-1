@@ -165,5 +165,12 @@ PRODUCT_COPY_FILES += \
 	device/huawei/msm7x30-common/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
 	device/huawei/msm7x30-common/keylayout/surf_keypad.kl:system/usr/keylayout/surf_keypad.kl
 
+# Props
+PRODUCT_PROPERTY_OVERRIDES += \
+	dalvik.vm.heapstartsize=5m
+	dalvik.vm.heapgrowthlimit=32m
+	dalvik.vm.heapsize=80m
+	dalvik.vm.dexopt-data-only=0
+
 $(call inherit-product, build/target/product/full.mk)
-$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
