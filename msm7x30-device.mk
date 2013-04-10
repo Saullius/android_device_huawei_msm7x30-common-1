@@ -53,8 +53,7 @@ PRODUCT_PACKAGES += \
 
 # Other
 PRODUCT_PACKAGES += \
-    dexpreopt \
-	DisplayFix
+    dexpreopt
 	
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -167,9 +166,9 @@ PRODUCT_COPY_FILES += \
 
 # Props
 PRODUCT_PROPERTY_OVERRIDES += \
-	dalvik.vm.heapstartsize=5m
-	dalvik.vm.heapgrowthlimit=32m
-	dalvik.vm.heapsize=80m
+	dalvik.vm.heapstartsize=5m \
+	dalvik.vm.heapgrowthlimit=32m \
+	dalvik.vm.heapsize=80m \
 	dalvik.vm.dexopt-data-only=0
 
 $(call inherit-product, build/target/product/full.mk)
