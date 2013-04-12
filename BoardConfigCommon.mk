@@ -109,7 +109,6 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_RMT_STORAGE := true
 RECOVERY_CHARGEMODE := true
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun1/file"
-BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/msm7x30-common/recovery/graphics_cn.c
 TARGET_RECOVERY_INITRC := device/huawei/msm7x30-common/recovery/recovery.rc
 TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/msm7x30-common/recovery_kernel
 # Use this flag if the board has a ext4 partition larger than 2gb
