@@ -1,5 +1,5 @@
 # inherit from the proprietary version
--include vendor/huawei/msm7x30-common/BoardConfigVendor.mk
+#-include vendor/huawei/msm7x30-common/BoardConfigVendor.mk
 TARGET_SPECIFIC_HEADER_PATH := device/huawei/msm7x30-common/include
 
 TARGET_NO_BOOTLOADER := true

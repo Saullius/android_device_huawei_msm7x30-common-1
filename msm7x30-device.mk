@@ -1,8 +1,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/common/gps/gps_as_supl.mk)
-$(call inherit-product, vendor/huawei/msm7x30-common/msm7x30-common-vendor.mk)
+#$(call inherit-product, vendor/huawei/msm7x30-common/msm7x30-common-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/huawei/msm7x30-common/overlay
+#DEVICE_PACKAGE_OVERLAYS += device/huawei/msm7x30-common/overlay
 
 PRODUCT_LOCALES += hdpi
 #PRODUCT_LOCALES := zh_CN zh_TW en_US
@@ -42,10 +42,6 @@ PRODUCT_PACKAGES += \
 	libdivxdrmdecrypt \
 	libOmxVdec \
 	libOmxVenc \
-	mm-venc-omx-test720p \
-    mm-video-encdrv-test \
-    mm-vdec-omx-test \
-    mm-video-driver-test
 
 # Power
 PRODUCT_PACKAGES += \
