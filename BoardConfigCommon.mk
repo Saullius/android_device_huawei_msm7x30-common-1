@@ -65,8 +65,9 @@ BOARD_INSTALLER_CMDLINE := $(BOARD_KERNEL_CMDLINE)
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGESIZE := 4096
 
-#TARGET_KERNEL_SOURCE := kernel/huawei/honor
-#TARGET_KERNEL_CONFIG := shendu_honor_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/honor
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-eabi-4.7
+TARGET_KERNEL_CONFIG := shendu_honor_defconfig
 TARGET_PREBUILT_KERNEL := device/huawei/msm7x30-common/kernel
 # Wifi
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
